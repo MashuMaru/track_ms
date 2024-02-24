@@ -28,3 +28,9 @@ Data Access: Azure SQL *(user data, exercise data), Container storage *(images).
 
 Using ASP.NET WebAPI Identity (register user, login user)
 - Nuget: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+##### Create WebAPI
+dotnet new sln
+dotnet new webapi -o [NameOfProject].Web -- Controllers, DTO's
+dontet new classlib -o [NameOfProject].Services -- Business logic layer
+dontet new classlib -o [NameOfProject].Data -- Data access layer
