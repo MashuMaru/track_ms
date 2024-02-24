@@ -1,0 +1,6 @@
+@Track_MS.Web_HostAddress = http://localhost:5278
+
+GET {{Track_MS.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

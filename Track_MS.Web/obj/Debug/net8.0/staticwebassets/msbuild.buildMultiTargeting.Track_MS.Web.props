@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Track_MS.Web.props" />
+</Project>
