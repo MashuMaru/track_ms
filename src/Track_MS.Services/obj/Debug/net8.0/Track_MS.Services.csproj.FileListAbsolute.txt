@@ -1,0 +1,12 @@
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/bin/Debug/net8.0/Track_MS.Services.deps.json
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/bin/Debug/net8.0/Track_MS.Services.dll
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/bin/Debug/net8.0/Track_MS.Services.pdb
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.AssemblyInfoInputs.cache
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.AssemblyInfo.cs
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.csproj.CoreCompileInputs.cache
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.sourcelink.json
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.dll
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/refint/Track_MS.Services.dll
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/Track_MS.Services.pdb
+/Users/matthewberenyi/Documents/GitHub/track_ms/src/Track_MS.Services/obj/Debug/net8.0/ref/Track_MS.Services.dll
