@@ -19,6 +19,11 @@ public class UserController : ControllerBase
     [HttpGet("identifier")]
     public async Task<ActionResult<string>> GenerateIdentifierAsync()
     {
-        return Ok(await _userService.GenerateIdentifierAsync());
+        var response = await _userService.GenerateIdentifierAsync();
+
+        if (!response.IsSuccessful)
+            return BadRequest(response.Message);
+
+        return Ok(response.Data);
     }
 }

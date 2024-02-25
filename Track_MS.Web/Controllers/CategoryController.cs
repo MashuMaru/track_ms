@@ -19,6 +19,11 @@ public class CategoryController : ControllerBase
     [HttpGet("identifier")]
     public async Task<ActionResult<string>> CreateNewCategoryAsync()
     {
-        return await _categoryService.GenerateIdentifierAsync();
+        var response = await _categoryService.GenerateIdentifierAsync();
+
+        if (!response.IsSuccessful)
+            return BadRequest(response.Message);
+
+        return Ok(response.Data);
     }
 }
