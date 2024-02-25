@@ -1,7 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [appName, setAppName] = useState<string>();
+  const [appTime, setAppTime] = useState<string>();
+  
+  useEffect(() => {
+    setName();
+    setTime();
+  }, [])
+
+  const setName = () => {
+    console.log('Called setName()');
+    const name = `Track_MS ${new Date().toLocaleDateString()}`
+    setAppName(name);
+  }
+
+  const setTime = () => {
+    console.log('Called setTime()')
+    setAppTime(Date().toString());
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +35,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Track_MS Template
+          {appName}
         </a>
+        <p>{appTime}</p>
       </header>
     </div>
   );
