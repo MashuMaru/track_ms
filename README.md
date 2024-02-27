@@ -14,6 +14,7 @@ Workout tracker
 -   Exercise (saveable as a workout category)
 - Ability to create workout categories with an image.
 -   Assigned against the user id.
+- Ability to create excercise type(bench, walk, runn etc.)
 - Ability to view past exercises based on:
 -   Attendance to gym (maybe a calendar view?)
 -   Exercise configuration (in a table, displaying the weight, day, tooltip of reps/sets)
