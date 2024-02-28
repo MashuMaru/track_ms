@@ -12,9 +12,12 @@ Workout tracker
 -   Number of reps
 -   Weight
 -   Exercise (saveable as a workout category)
-- Ability to create workout categories with an image.
+- Ability to create workout with an image.
 -   Assigned against the user id.
-- Ability to create excercise type(bench, walk, runn etc.)
+-   Assigned against an excercise category id.
+- Ability to create excercise category
+-   Cardio (provided)
+-   Weights (provided)
 - Ability to view past exercises based on:
 -   Attendance to gym (maybe a calendar view?)
 -   Exercise configuration (in a table, displaying the weight, day, tooltip of reps/sets)
@@ -35,3 +38,12 @@ dotnet new sln
 dotnet new webapi -o [NameOfProject].Web -- Controllers, DTO's
 dontet new classlib -o [NameOfProject].Services -- Business logic layer
 dontet new classlib -o [NameOfProject].Data -- Data access layer
+
+[Dependancies]
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlLite (Development DB -- Later migration to Azure SQL.)
+[Migration]
+dotnet ef nuget
+dotnet tool install --global dotnet-ef --version 8.0.2 (already installed)
+dotnet ef migrations add InitialCreate -o Data/Migrations (To create a first migration)
+dotnet ef database update (Creates database in SQL Lite)
