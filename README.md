@@ -21,6 +21,8 @@ Workout tracker
 - Ability to view past exercises based on:
 -   Attendance to gym (maybe a calendar view?)
 -   Exercise configuration (in a table, displaying the weight, day, tooltip of reps/sets)
+-   Pagination on the table to only retrieve 10 rows/page.
+-   Filterable by day/category/workout
 
 #### TECHSTACK:
 
