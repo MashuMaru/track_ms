@@ -26,7 +26,7 @@ Workout tracker
 
 #### TECHSTACK:
 
-Frontend: React + Redux State Management
+Frontend: React + Redux State Management (Redux Saga Middleware)
 Backend: C# .NET 8, Entity Framework. 
 Data Access: Azure SQL *(user data, exercise data), Container storage *(images). 
 
