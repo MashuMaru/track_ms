@@ -1,8 +1,23 @@
 # Excercises 
 [Table]
-**Id(PK), Name, UserId, SessionId(FKC to `#Sessions`), CategoryId (FKC to `#Categories`), Unit (FKC to `#UnitOfMeasurements`), Sets, Reps, WeightValue, CardioValue**
-1, "Bench press", 1, 10, 1, 3, 10, 50, NULL
-2, "Running", 1, 10, 1, 3, NULL, NULL, NULL, 5
+**Id(PK), WorkoutId (FKC to `#Workouts`), UserId, SessionId (FKC to `#Sessions`), Unit (FKC to `#UnitOfMeasurements`)**
+1, 1, 1, 10, 1
+2, 2, 1, 10, 1
+
+
+# Workouts
+**Id(PK), Name, CategoryId(FKC to `#Categories`), UserId (FKC to `#Categories`), WeightsId, CardioId**
+1, "Bench press", 1, 1, 1, NULL
+2, "Running", 2, 1, NULL, 1
+
+- Workouts set by the user. 
+
+# WeightWorkouts
+Id
+1, 
+
+
+# CardioWorkouts
 
 # Sessions
 [Table]
@@ -30,4 +45,5 @@ State[Enum] {
 3, "Km", 1,
 4, "Minutes", 1
 5, "Seconds, 1, 1 *(customer unit of measurement)
+
 - Ability to add custom `#UnitOfMeasurements`
