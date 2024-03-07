@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Data", "Track_MS.Data\Track_MS.Data.csproj", "{F2A1B9DB-54DA-48C6-BFFF-67C1E06ECFB7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Services", "Track_MS.Services\Track_MS.Services.csproj", "{FE139F50-CDE3-499F-9DF8-DD10A3892F78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Web", "Track_MS.Web\Track_MS.Web.csproj", "{0E798969-23B8-4FA3-B8B4-F2FA65834E51}"
