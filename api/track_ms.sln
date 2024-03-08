@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Services", "Track_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Web", "Track_MS.Web\Track_MS.Web.csproj", "{0E798969-23B8-4FA3-B8B4-F2FA65834E51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Track_MS.Data", "Track_MS.Data\Track_MS.Data.csproj", "{FE6CDCAB-9E31-4D98-AC34-703CF392654B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,10 +18,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F2A1B9DB-54DA-48C6-BFFF-67C1E06ECFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2A1B9DB-54DA-48C6-BFFF-67C1E06ECFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2A1B9DB-54DA-48C6-BFFF-67C1E06ECFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2A1B9DB-54DA-48C6-BFFF-67C1E06ECFB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE139F50-CDE3-499F-9DF8-DD10A3892F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE139F50-CDE3-499F-9DF8-DD10A3892F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE139F50-CDE3-499F-9DF8-DD10A3892F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -28,5 +26,9 @@ Global
 		{0E798969-23B8-4FA3-B8B4-F2FA65834E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E798969-23B8-4FA3-B8B4-F2FA65834E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E798969-23B8-4FA3-B8B4-F2FA65834E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE6CDCAB-9E31-4D98-AC34-703CF392654B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6CDCAB-9E31-4D98-AC34-703CF392654B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6CDCAB-9E31-4D98-AC34-703CF392654B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6CDCAB-9E31-4D98-AC34-703CF392654B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
