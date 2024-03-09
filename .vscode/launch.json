@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "C#: Tracker Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Tracker.Web/Tracker.Web.csproj",
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Tracker Launch",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "",
+            "args": [],
+        }
+
+    ]
+}
