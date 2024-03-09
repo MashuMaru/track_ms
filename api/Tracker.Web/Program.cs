@@ -1,5 +1,9 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Tracker.Data;
+using Tracker.Services;
+using Tracker.Services.Services;
+using Tracker.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+/*Services*/
+// var mapperConfig = new MapperConfiguration(mc => 
+// {
+//     mc.AddProfile(new MappingProfiler());
+// });
+
+builder.Services.AddSingleton(
+    new MapperConfiguration(mc => 
+    { 
+        mc.AddProfile(new MappingProfiler()); 
+    }).CreateMapper());
+
+builder.Services.AddScoped<IUserService, UserService>();
+
+
+/*DbContext*/
 builder.Services.AddDbContext<TrackerContext>(options => 
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
