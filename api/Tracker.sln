@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Web", "Tracker.Web\Tracker.Web.csproj", "{F132998A-FECF-4662-877A-858EF30E6A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Data", "Tracker.Data\Tracker.Data.csproj", "{4332400D-C257-4B91-9F00-BC8894C40F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Services", "Tracker.Services\Tracker.Services.csproj", "{0663B753-98AA-4279-A266-A55FAD4C3364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F132998A-FECF-4662-877A-858EF30E6A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F132998A-FECF-4662-877A-858EF30E6A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F132998A-FECF-4662-877A-858EF30E6A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F132998A-FECF-4662-877A-858EF30E6A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4332400D-C257-4B91-9F00-BC8894C40F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4332400D-C257-4B91-9F00-BC8894C40F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4332400D-C257-4B91-9F00-BC8894C40F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4332400D-C257-4B91-9F00-BC8894C40F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0663B753-98AA-4279-A266-A55FAD4C3364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0663B753-98AA-4279-A266-A55FAD4C3364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0663B753-98AA-4279-A266-A55FAD4C3364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0663B753-98AA-4279-A266-A55FAD4C3364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
