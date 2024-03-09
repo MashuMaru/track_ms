@@ -49,3 +49,25 @@ dotnet ef nuget
 dotnet tool install --global dotnet-ef --version 8.0.2 (already installed)
 dotnet ef migrations add InitialCreate -o Data/Migrations (To create a first migration)
 dotnet ef database update (Creates database in SQL Lite)
+
+
+-----
+Architecture design pattern - Seperation of concerns. 
+
+[Track_MS.Web] - Controllers
+- w/ reference to `Services`
+[Track_MS.Services] - Business logic
+- w/ reference to `Data`
+[Track_MS.Data] - Data layer
+
+### IMPORTANT ###
+The design pattern for the API follows a seperation of concern, between the 
+- WebAPI (Project.Web => Controllers etc.), 
+- Class Library (Project.Data => Data layer, DbContext, Entities)
+- Class Library (Project.Services => Logic layer, services etc.)
+
+EF needs to know what migrations to run, referencing which project that contains the startup logic. 
+
+dotnet ef migrations add InitialCreate --project Tracker.Data/Tracker.Data.csproj --startup-project Tracker.Web/Tracker.Web.csproj
+
+dotnet ef database update --project Tracker.Data/Tracker.Data.csproj  --startup-project Tracker.Web/Tracker.Web.csproj
