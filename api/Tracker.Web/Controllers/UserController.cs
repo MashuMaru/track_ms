@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Services.DTOs;
 using Tracker.Services.Services;
@@ -16,7 +15,6 @@ public class UserController : ControllerBase
         _userService = userService;
     }
 
-    [AllowAnonymous]
     [HttpPost("create")]
     public async Task<IActionResult> CreateUserAsync([FromBody] UserDto userModel)
     {
@@ -28,8 +26,7 @@ public class UserController : ControllerBase
         return Ok(response.Message);
     }
 
-    [AllowAnonymous]
-    [HttpPost("{id}")]
+    [HttpPost("{id:int}")]
     public async Task<IActionResult> GetUserByIdAsync(int id)
     {
         var response = await _userService.GetUserByIdAsync(id);

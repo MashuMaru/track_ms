@@ -35,7 +35,7 @@ public class UserService : IUserService
             return new ServiceResponse<string>
             {
                 IsSuccessful = true,
-                Message = $"Successfully created account for {userModel.Username}. UserId: {mappedUser.Id}."
+                Message = $"Successfully created account for {mappedUser.Username}. UserId: {mappedUser.Id}."
             };
         }
         catch (Exception e)

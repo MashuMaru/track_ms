@@ -1,5 +1,10 @@
 {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 160,
-    "editor.fontFamily": "'Cousine', monospace"
+    "editor.fontFamily": "'Cousine', monospace",
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+    "editor.autoIndent": "advanced",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }
