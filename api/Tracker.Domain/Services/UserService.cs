@@ -45,8 +45,6 @@ public class UserService : IUserService
                 IsSuccessful = false,
                 Message = e.Message
             };
-
-            throw new Exception("Something went wrong.", e);
         }
     }
 
@@ -67,8 +65,7 @@ public class UserService : IUserService
                 IsSuccessful = false,
                 Message = e.Message
             };
-
-            throw new Exception("Something went wrong.", e);
+            
         }
     }
 }

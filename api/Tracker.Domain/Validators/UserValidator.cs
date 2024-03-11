@@ -1,11 +1,11 @@
 using FluentValidation;
 using Tracker.Services.DTOs;
 
-namespace Tracker.Services.Validator
+namespace Tracker.Services.Validators
 {
-    public class UserValidator : AbstractValidator<UserDto>
+    public abstract class UserValidator : AbstractValidator<UserDto>
     {
-        public UserValidator()
+        protected UserValidator()
         {
             RuleFor(x => x.Username)
                 .NotEmpty()
