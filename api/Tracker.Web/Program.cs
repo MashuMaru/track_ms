@@ -1,13 +1,11 @@
 using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Tracker.Data;
 using Tracker.Services;
 using Tracker.Services.Services;
-using Tracker.Services.Validator;
-using Tracker.Web;
+using Tracker.Services.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
