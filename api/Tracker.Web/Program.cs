@@ -1,8 +1,12 @@
 using AutoMapper;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Tracker.Data;
 using Tracker.Services;
 using Tracker.Services.Services;
+using Tracker.Services.Validator;
 using Tracker.Web;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,10 +19,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 /*Services*/
-// var mapperConfig = new MapperConfiguration(mc => 
-// {
-//     mc.AddProfile(new MappingProfiler());
-// });
+builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddSingleton(
     new MapperConfiguration(mc => 
