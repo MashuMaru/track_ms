@@ -1,8 +1,8 @@
 using AutoMapper;
 using Tracker.Data.Entities;
-using Tracker.Services.DTOs;
+using Tracker.Domain.DTOs;
 
-namespace Tracker.Services
+namespace Tracker.Domain
 {
     public class MappingProfiler : Profile
     {

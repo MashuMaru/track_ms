@@ -3,9 +3,9 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Tracker.Data;
-using Tracker.Services;
-using Tracker.Services.Services;
-using Tracker.Services.Validators;
+using Tracker.Domain;
+using Tracker.Domain.Services;
+using Tracker.Domain.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
