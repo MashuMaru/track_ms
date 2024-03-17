@@ -1,4 +1,4 @@
-namespace Tracker.Services.DTOs
+namespace Tracker.Domain.DTOs
 {
     public class UserDto
     {

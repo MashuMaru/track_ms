@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Tracker.Services.DTOs;
-using Tracker.Services.Services;
+using Tracker.Domain.DTOs;
+using Tracker.Domain.Services;
 
 namespace Tracker.Web.Controllers;
 

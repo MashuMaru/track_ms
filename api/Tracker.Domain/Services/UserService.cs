@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Tracker.Data;
 using Tracker.Data.Entities;
-using Tracker.Services.DTOs;
+using Tracker.Domain.DTOs;
 
-namespace Tracker.Services.Services;
+namespace Tracker.Domain.Services;
 
 public interface IUserService 
 {
