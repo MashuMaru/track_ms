@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// builder.Services.AddControllers();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -21,11 +22,10 @@ builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
 
-builder.Services.AddSingleton(
-    new MapperConfiguration(mc => 
-    { 
-        mc.AddProfile(new MappingProfiler()); 
-    }).CreateMapper());
+builder.Services.AddSingleton(new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfiler()); 
+}).CreateMapper());
 
 builder.Services.AddScoped<IUserService, UserService>();
 

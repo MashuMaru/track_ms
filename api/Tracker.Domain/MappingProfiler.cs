@@ -6,9 +6,9 @@ namespace Tracker.Domain
 {
     public class MappingProfiler : Profile
     {
-        public MappingProfiler() 
+        public MappingProfiler()
         {
-            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UserDto>();
         }   
     }
 }
