@@ -3,12 +3,13 @@ using Tracker.Domain.DTOs;
 
 namespace Tracker.Domain.Validators;
 
-public abstract class UserValidator : AbstractValidator<UserDto>
+public class UserValidator : AbstractValidator<UserDto>
 {
-    protected UserValidator()
+    public UserValidator()
     {
         RuleFor(x => x.Username)
             .NotEmpty()
+            .WithMessage("Username must not be empty and a maximum of 13 characters.")
             .MaximumLength(13)
             .WithMessage("Username must be maximum 13 characters.");
 
