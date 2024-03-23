@@ -9,6 +9,7 @@ namespace Tracker.Domain
         public MappingProfiler()
         {
             CreateMap<User, UserDto>();
+            CreateMap<Category, CategoryDto>();
         }   
     }
 }
