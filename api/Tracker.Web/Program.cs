@@ -6,12 +6,14 @@ using Tracker.Data;
 using Tracker.Domain;
 using Tracker.Domain.Services;
 using Tracker.Domain.Validators;
+using Tracker.Web.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
-// builder.Services.AddControllers();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -20,7 +22,7 @@ builder.Services.AddSwaggerGen();
 /*Services*/
 builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
 builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddFluentValidationClientsideAdapters();
+// builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddSingleton(new MapperConfiguration(mc =>
 {
@@ -48,7 +50,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseExceptionHandler();
 app.MapControllers();
 
 app.Run();

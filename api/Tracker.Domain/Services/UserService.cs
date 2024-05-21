@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Tracker.Data;
 using Tracker.Data.Entities;
 using Tracker.Domain.DTOs;
@@ -40,11 +41,12 @@ public class UserService : IUserService
         }
         catch (Exception e)
         {
-            return new ServiceResponse<string>
-            {
-                IsSuccessful = false,
-                Message = e.Message
-            };
+            throw new Exception($"Error creating user: {userModel.Username}");
+            // return new ServiceResponse<string>
+            // {
+            //     IsSuccessful = false,
+            //     Message = e.Message
+            // };
         }
     }
 

@@ -12,5 +12,13 @@ namespace Tracker.Data
         /*Entities*/
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
+        
+        /*Model builder*/
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .Property(p => p.Created)
+                .HasDefaultValue(DateTime.UtcNow);
+        }
     }
 }

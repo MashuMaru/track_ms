@@ -4,3 +4,6 @@ api/Tracker.Web/tracker.db
 api/Tracker.Web/tracker.db-wal
 api/Tracker.Web/tracker.db-shm
 api/Tracker.Web/tracker.db
+*.db-wal
+*.db-shm
+*.db

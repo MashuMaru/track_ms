@@ -28,10 +28,10 @@ public class CategoryService : ICategoryService
         try 
         {
             
-            var mappedCategory = _mapper.Map<Category>(dto);
-
-            await _dbContext.Categories.AddAsync(mappedCategory);
-            await _dbContext.SaveChangesAsync();
+            // var mappedCategory = _mapper.Map<Category>(dto);
+            //
+            // await _dbContext.Categories.AddAsync(mappedCategory);
+            // await _dbContext.SaveChangesAsync();
 
             return new ServiceResponse<bool>
             {
