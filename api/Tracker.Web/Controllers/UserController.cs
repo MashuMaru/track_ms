@@ -1,8 +1,8 @@
-using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Domain.DTOs;
 using Tracker.Domain.Services;
+using Tracker.Domain.Validators;
 
 namespace Tracker.Web.Controllers;
 
@@ -18,15 +18,16 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("create")]
+    [HttpPost]
     public async Task<IActionResult> CreateUserAsync([FromBody] UserDto userModel)
     {
-        throw new Exception("yooo, bad request.");
+        var request = await new UserValidator().ValidateAsync(userModel);
+
+        if (!request.IsValid)
+            throw new BadHttpRequestException(request.Errors.First().ToString());
+        
         var response = await _userService.CreateUserAsync(userModel);
-
-        if (!response.IsSuccessful)
-            return BadRequest(response.Message);
-
+        
         return Ok(response.Message);
     }
 

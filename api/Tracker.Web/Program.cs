@@ -21,7 +21,7 @@ builder.Services.AddSwaggerGen();
 
 /*Services*/
 builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
-builder.Services.AddFluentValidationAutoValidation();
+// builder.Services.AddFluentValidationAutoValidation();
 // builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddSingleton(new MapperConfiguration(mc =>

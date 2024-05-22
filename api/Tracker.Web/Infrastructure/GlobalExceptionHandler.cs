@@ -36,8 +36,7 @@ public class GlobalExceptionHandler : IExceptionHandler
     {
         return exception switch
         {
-            BadHttpRequestException => (StatusCodes.Status400BadRequest, "Bad Request"),
-            ValidationException => (StatusCodes.Status400BadRequest, "Validation Error"),
+            BadHttpRequestException => (StatusCodes.Status400BadRequest, exception.Message),
             _ => (StatusCodes.Status500InternalServerError, "Internal Server Error")
         };
     }

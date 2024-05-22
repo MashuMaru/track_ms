@@ -41,12 +41,7 @@ public class UserService : IUserService
         }
         catch (Exception e)
         {
-            throw new Exception($"Error creating user: {userModel.Username}");
-            // return new ServiceResponse<string>
-            // {
-            //     IsSuccessful = false,
-            //     Message = e.Message
-            // };
+            throw new Exception(e.Message, e.InnerException);
         }
     }
 
